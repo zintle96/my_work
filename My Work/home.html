@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zintle's Portfolio</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <link rel='stylesheet' href='style.css'/>
+        <nav>
+            <div class='nav' id='home'>
+            <ul>
+                <li><a href="#portfolio">MY PORTFOLIO</a></li>
+                <li><a href="#contact">GET IN TOUCH</a></li>
+            </ul>
+        </div>
+        </nav>
+        
+    </head>
+    
+    <body>
+        <section class='home-slide'>
+            <div class='home'>
+            
+            <h1>Meet Zintle, a specialised website developer!</h1>
+
+            </div>
+        </section>
+
+        <section class='portfolio-slide' id='portfolio'>
+            
+        <button type="button" class="collapsible">A little about myself <br> <img class="zee circular" src="images/zee.jpg" width="104" height="135"></button>
+            <div class="content">
+                <p>My name is <strong>Zintle Meslane</strong>. I am a very passionate person,<br> observant and I am always keen to
+                    learn something new which is<br> one of the reasons why I love challenges. Being a
+                    student at UWC for a few <br>years has provided me with many experiences, few of which are being a very<br>
+                    resourceful individual, I can figure things out on my own, and
+                    I am a <br>fast learner and can use certain tools to the benefit of the client.<br> Apart from my
+                    eagerness to learn I have very good communication skills,<br> I listen very carefully with detail and
+                    have the ability to speak clearly so as to<br> get along well with my co-workers and clients.
+                    I work well under pressure.<br> I consider respecting my time as well as the time of others very
+                    important<br>, which makes punctuality one of my special qualities.<br> Being exposed to coding has allowed
+                    me to<br> acquire different qualities as an individual, as well as in my profession.</p>    
+            </div>
+            <hr>
+<button type="button" class="collapsible">Education and Accomplisments<br> <img class="uwc circular" src="images/uwc.jpeg" width="180" height="130"> </button>
+<div class="content">
+  <p>BA in Psychology and Ethics (Degree) at the University of the Western Cape (2019)
+    </p>
+</div>
+            <hr>
+
+<button type="button" class="collapsible">Experience, Skills  and Services <br> <img class="tools circular" src="images/tools.jpeg" width="155" height="118"> </button>
+<div class="content">
+    <p>Developed a school website for Mzamomtsha Primary School.<br> You can check the website by clicking here:<br>
+        <a href='https://zeephelo.netlify.com/'><img src='images/mzmtsh.png'></a>
+    </p>
+    <h2><strong>Skills</strong></h2>
+    <p>HTML5, CSS3, JavaScript, SQL, jQUERY</p>
+    <p>Here is my resume for more information:
+        <a href="ZintleCV.docx" download>
+            <img src="images/resume.jpg" width="104" height="142">
+        </a>
+    </p>
+
+</div>
+            <hr>
+<button type="button" class="collapsible">Objectives and Goals <br> <img class="goals circular" src="images/goals.jpeg" width="155" height="110"> </button>
+<div class="content">
+  <p><ul>Web Developer (Full-stack)</ul> 
+    <ul>Software Engineer</ul>
+    <ul>Mobile App Developer</ul>
+    <ul>Becoming an expert in my field.</ul>
+    <ul>Assuming a leadership position.</ul>
+    <ul>Learning a new skill.</ul>
+    <ul>Improving the company bottom line.</ul>
+    </p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+        </section>
+
+    <section class='contact' id='contact'>
+        
+        <div class='contact-form'>
+            <form id="contact-form">
+                <div class='inputs'>
+            <h2>GET IN TOUCH..</h2>
+    
+                    Fullname:<br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Fullname" required><br><br>
+    
+    
+                    Email Address:<br>
+                        <input type="text" id="email" name="email" placeholder="Email Address" required><br><br>
+    
+                    Phone Number:<br>
+                        <input type="text" id="phone" name="phone" placeholder="Phone Number"><br><br>
+    
+                    Subject:<br>
+                    <textarea id="subject" name="subject" placeholder="Write me an email. ." style="height:120px"></textarea><br><br>
+    
+                    <br/>
+                    
+                    <input type="submit" value="Submit">
+                </div>
+    
+                </form>
+                <div class='social-media'>
+                    <a href="https://www.linkedin.com/in/zintle-meslane-69ab1719a/"><img src="images/linkedin.png"></a>
+                    <a href="https://www.instagram.com/meslane_z/"><img src="images/instagram.png"></a>
+                    <a href="https://www.facebook.com/zintle.meslane"><img src="images/facebook.png"></a>
+                    <a href="https://twitter.com/ZMeslane"><img src="images/twitter.png"></a>
+        
+                </div>
+                
+            </div>
+    
+    </section>
+
+    <section class='footer'>
+    <div class='footer'>
+    
+        <p> &#9743; Cell: 0812835354</p>
+        
+        <p> &#64; Email: meslanezintle@gmail.com</p>
+    </div>
+</section>
+
+    <script src="form.js"></script>
+    </body>
+    
+</html>
